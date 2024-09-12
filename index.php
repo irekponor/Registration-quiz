@@ -89,7 +89,7 @@
             <input type="password" name="repeat_pwd" placeholder="Repeat Password">
 
 
-            <input type="submit" class="btn btn-primary" value="Register" name="submit">
+            <input type="submit" class="btn btn-primary" value="Sign Up" name="submit">
 
             <p>Already registered? <a href="login-user.php">Login here</a></p>
 
