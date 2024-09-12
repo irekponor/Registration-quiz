@@ -231,25 +231,38 @@ submitBtn.addEventListener("click", () => {
     if (currentQuiz < data.length) {
       loadQuiz();
     } else {
-      quiz.innerHTML = `
-        <div class="quiz-results">
-        <h3>You Answered ${score}/${data.length} Questions Correctly</h3>
-        <h5>Questions You Failed:
-          ${failedQuestions
-            .map(
-              (question, index) => `
-            <li>
-              Question ${index + 1}: ${question.question} <br>
-              Your Answer: ${question.userAnswer} <br>
-              Correct Answer: ${question.correctAnswer}
-            </li>
-          `
-            )
-            .join("")}
-            </h5>
-            </div>
-        <button onclick="location.reload()">Restart</button>
-      `;
+      const formData = new FormData();
+      formData.append("score", score);
+      formData.append("failed_questions", JSON.stringify(failedQuestions));
+      formData.append("email", "<?php echo $_SESSION['email']; ?>");
+      fetch("save_score.php", {
+        method: "POST",
+        body: formData,
+      })
+        .then((response) => response.text())
+        .then((message) => {
+          quiz.innerHTML = `
+              <div class="quiz-results">
+                <h3>You Answered ${score}/${
+            data.length
+          } Questions Correctly</h3>
+                <h5>Questions You Failed: ${failedQuestions
+                  .map(
+                    (question, index) => `
+                  <li>
+                    Question ${index + 1}: ${question.question} <br>
+                    Your Answer: ${question.userAnswer} <br>
+                    Correct Answer: ${question.correctAnswer}
+                  </li>
+                `
+                  )
+                  .join("")}
+                </h5>
+              </div>
+              <button onclick="location.reload()">Restart</button>
+              <p>${message}</p>
+            `;
+        });
     }
   }
 });
