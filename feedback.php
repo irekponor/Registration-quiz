@@ -42,6 +42,14 @@ if (!isset($_SESSION["user"])) {
             <button type="submit" id="sendMessage" class="c-btn pull-right">Submit</button>
         </form>
     </div>
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <script src="feedback.js"></script>
+
 </body>
 
 </html>
