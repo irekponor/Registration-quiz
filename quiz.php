@@ -10,9 +10,12 @@ if (!isset($_SESSION["user"])) {
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
-    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="quiz.css" type="text/css">
+    <script src="https://kit.fontawesome.com/de8e2530fe.js" crossorigin="anonymous"></script>
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="Images/logo.jpg">
@@ -21,9 +24,7 @@ if (!isset($_SESSION["user"])) {
     <link rel="apple-touch-icon" sizes="114x114" href="Images/logo.jpg">
     <link rel="apple-touch-icon" sizes="144x144" href="Images/logo.jpg">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <script src="https://kit.fontawesome.com/de8e2530fe.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -50,12 +51,12 @@ if (!isset($_SESSION["user"])) {
                 </li>
             </ul>
 
+            <p><a href="logout.php" class="btn btn-warning">Log-Out</a></p>
 
         </div>
 
         <button id="submit">Next <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
 
-        <a href="logout.php" class="btn btn-dark">Log-out</a>
     </div>
 
 
