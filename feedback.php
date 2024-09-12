@@ -19,6 +19,10 @@
 <body>
     <div class="container">
         <form onsubmit="emailSend(); reset(); return false;">
+            <h2>Feedback</h2>
+            <h3>I value your thoughts and contributions and would like to hear from you how to quiz was,
+                and i will get back to you as soon as possible.
+            </h3>
             <p>Full Name:</p>
             <input type="text" name="senderName" id="senderName" placeholder="" required="required" />
             <p>Email Add:</p>
