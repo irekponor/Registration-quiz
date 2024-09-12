@@ -15,6 +15,15 @@ if (isset($_SESSION["user"])) {
     <title>Delete User</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="delete.css" type="text/css">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="Images/logo.jpg">
+    <link rel="apple-touch-icon" href="Images/logo.jpg">
+    <link rel="apple-touch-icon" sizes="72x72" href="Images/logo.jpg">
+    <link rel="apple-touch-icon" sizes="114x114" href="Images/logo.jpg">
+    <link rel="apple-touch-icon" sizes="144x144" href="Images/logo.jpg">
+
+
 </head>
 
 <body>

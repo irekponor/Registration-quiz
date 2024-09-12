@@ -24,6 +24,8 @@ if (!isset($_SESSION["user"])) {
     <link rel="apple-touch-icon" sizes="72x72" href="Images/logo.jpg">
     <link rel="apple-touch-icon" sizes="114x114" href="Images/logo.jpg">
     <link rel="apple-touch-icon" sizes="144x144" href="Images/logo.jpg">
+
+
 </head>
 
 <body>
