@@ -13,6 +13,7 @@ body{
     max-width: 800px;
     margin: 0 auto;
     padding: 0px;
+    border-radius: 20px;
 }
 
 form{
@@ -48,4 +49,15 @@ p{
     padding-top: 20px;
 }
 
+@media (max-width: 768px) {
+    .container{
+        width: 100%;
+        border-radius: 20px;
+        position: fixed;
+    }
 
+    i{
+        font-size: 40px;
+        padding-left: 7.3rem;
+    }
+}
