@@ -22,8 +22,12 @@ h3{
 
 p{
     text-align: center;
-    padding: 15px;
+    padding: 18px;
     font-size: 18px;
+}
+
+.btn-dark{
+    margin: 10px 20px 20px 22rem;
 }
 
 .fa-heart{
