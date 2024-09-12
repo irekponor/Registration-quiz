@@ -12,6 +12,7 @@ form{
     flex-direction: column;
     padding: 2vw 10vw;
     border-radius: 10px;
+    background: #f5f5f5;
 }
 
 input, textarea{
@@ -23,3 +24,18 @@ input, textarea{
     border-radius: 15px;
     background: #f5f5f5;
 }
+
+button{
+    padding: 15px;
+    background: #87ceeb;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
