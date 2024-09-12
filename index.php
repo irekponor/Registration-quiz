@@ -96,7 +96,7 @@
             <p>Already registered? <a href="login-user.php">Login here</a></p>
 
         </form>
-        <a href="delete-user.php">Delete Account</a>
+        <a href="delete.php">Delete Account</a>
     </div>
 
 </body>

@@ -12,7 +12,7 @@
 
 <body>
     <div class="container">
-        <form action="delete-user.php" method="post">
+        <form action="delete.php" method="post">
 
             <?php
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -21,7 +21,7 @@
 
                 require_once "database.php";
 
-                $query = "SELECT * FROM users WHERE email = :email";
+                $query = "SELECT * FROM accounts WHERE email = :email";
                 $stmt = $pdo->prepare($query);
                 $stmt->bindParam(":email", $email);
 
@@ -31,7 +31,7 @@
 
                 if ($user) {
                     if (password_verify($pwd, $user["pwd"])) {
-                        $query = "DELETE FROM users WHERE email = :email";
+                        $query = "DELETE FROM accounts WHERE email = :email";
 
                         $stmt = $pdo->prepare($query);
                         $stmt->bindParam(":email", $email);
@@ -49,6 +49,8 @@
                 }
             }
             ?>
+
+            <h3>Delete Account</h3>
 
             <input type="text" name="email" placeholder="Email">
 
