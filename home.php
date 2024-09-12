@@ -23,8 +23,7 @@ if (!isset($_SESSION["user"])) {
         <h3>Welcome, Cilian</h3>
         <p>This is a 20 question quiz that tests your knowledge across multiple fields.</p>
         <p>Made with love by Emmanuel Irekponor</p>
-        <button>Start</button>
-        <a href="logout.php" class="btn btn-warning">Log Out</a>
+        <a href="quiz.php" class="btn btn-dark">Start</a>
     </div>
 </body>
 
