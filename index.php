@@ -41,7 +41,7 @@
 
                 // Check if email is valid
                 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                    die("<div class='alert alert-danger'>Email is not valid.</div>");
+                    die("<div class='alert alert-danger'>Use a valid email.</div>");
                 }
 
                 // Check if email already exists
@@ -71,7 +71,7 @@
                     $pdo = null;
                     $stmt = null;
 
-                    die("<div class='alert alert-success'>You have registered successfully.</div>");
+                    die("<div class='alert alert-success'>Registration Successful!.</div>");
                 } catch (PDOException $e) {
                     die("Query Failed:" . $e->getMessage());
                 }
