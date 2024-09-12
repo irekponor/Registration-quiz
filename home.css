@@ -33,3 +33,15 @@ p{
 .fa-heart{
     color: #ff0000;
 }
+
+@media (max-width: 768px) {
+    .dashboard{
+        width: 400px;
+        border-radius: 20px;
+        position: fixed;
+    }
+
+    .btn-dark{
+        margin: 2px 5px 5px 10.1rem;
+    }
+}
