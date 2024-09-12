@@ -21,6 +21,8 @@ if (!isset($_SESSION["user"])) {
     <link rel="apple-touch-icon" sizes="114x114" href="Images/logo.jpg">
     <link rel="apple-touch-icon" sizes="144x144" href="Images/logo.jpg">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <script src="https://kit.fontawesome.com/de8e2530fe.js" crossorigin="anonymous"></script>
 </head>
 
@@ -53,6 +55,7 @@ if (!isset($_SESSION["user"])) {
 
         <button id="submit">Next <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
 
+        <a href="logout.php" class="btn btn-dark">Log-out</a>
     </div>
 
 
