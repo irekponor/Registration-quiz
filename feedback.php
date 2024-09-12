@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <form action="process.php" method="post">
+        <form method="post">
             <input type="email" name="email" id="" placeholder="Email">
             <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
             <input type="submit" class="btn btn-primary mt-4" value="Send" name="submit">

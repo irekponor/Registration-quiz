@@ -1,0 +1,25 @@
+body{
+    align-items: center;
+    justify-content: center;
+    background: #87ceeb;
+    font-family: "poppins", cursive;
+    display: flex;
+    height: 100vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 10vw;
+    border-radius: 10px;
+}
+
+input, textarea{
+    border: 1px solid;
+    margin: 10px 0;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 15px;
+    background: #f5f5f5;
+}
