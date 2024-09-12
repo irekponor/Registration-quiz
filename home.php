@@ -20,7 +20,10 @@ if (!isset($_SESSION["user"])) {
 
 <body>
     <div class="dashboard">
-        <h3>Welcome to the dashboard guyy</h3>
+        <h3>Welcome, Cilian</h3>
+        <p>This is a 20 question quiz that tests your knowledge across multiple fields.</p>
+        <p>Made with love by Emmanuel Irekponor</p>
+        <button>Start</button>
         <a href="logout.php" class="btn btn-warning">Log Out</a>
     </div>
 </body>
