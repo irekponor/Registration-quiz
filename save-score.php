@@ -8,6 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $score = $_POST["score"];
     $failed_questions = $_POST["failed_questions"];
 
+
     try {
         $query = "INSERT INTO quiz_scores (email, score, failed_questions) VALUES (:email, :score, :failed_questions;";
         $stmt = $pdo->prepare($query);
