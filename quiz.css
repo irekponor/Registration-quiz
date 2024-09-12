@@ -111,10 +111,22 @@ button{
     .quiz-results h5 {
       font-size: 11px;
     }
+
+    .btn{
+      margin: 20px;
+      color: #000000;
+      text-decoration: none;
+    }
   }
   
   @media (max-width: 480px) {
     .quiz-results li br {
       display: block; 
+    }
+
+    .btn{
+      margin: 20px;
+      color: #000000;
+      text-decoration: none;
     }
   }

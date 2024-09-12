@@ -249,8 +249,10 @@ submitBtn.addEventListener("click", () => {
                   .join("")}
                 </h5>
               </div>
+              <div class="btn">
                <button onclick="windows.loction.href='feedback.php'">Give Feedback</button>
               <button onclick="location.reload()">Restart</button>
+              </div>
             `;
     }
   }
