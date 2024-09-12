@@ -34,7 +34,7 @@
 
                 // Check password quality
                 if (!preg_match("/^[A-Za-z\d]{8,}$/", $pwd)) {
-                    die("<div class='alert alert-danger'>Use a strong password (1 uppercase, lowercase, 1 no, 1 special char, 8 chars min).</div>");
+                    die("<div class='alert alert-danger'>Use a strong password (numbers and letters (8 character minimum)).</div>");
                 }
 
                 $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
@@ -94,9 +94,9 @@
             <input type="submit" class="btn btn-primary" value="Sign Up" name="submit">
 
             <p>Already registered? <a href="login-user.php">Login here</a></p>
-
+            <a href="delete.php" class="delete">Delete Account</a>
         </form>
-        <a href="delete.php">Delete Account</a>
+
     </div>
 
 </body>

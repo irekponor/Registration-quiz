@@ -5,6 +5,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 30px;
 }
 
 .container {
@@ -43,7 +44,12 @@ i{
     color: #000000;
 }
 
-@media only screen and (max-width: 50rem){
+p{
+    padding-top: 20px;
+}
+
+
+@media (max-width: 50rem){
     i{
         display: none;
     }
