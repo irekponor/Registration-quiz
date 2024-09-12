@@ -25,8 +25,8 @@ function emailSend() {
   }).then((message) => {
     if (message == "OK") {
       swal(
-        "Sent successfully!",
-        "Thanks for sending your message! I'll get back to you shortly.",
+        "Successful",
+        "Thanks for giving me your feedback! I'll get back to you shortly.",
         "success"
       );
     } else {

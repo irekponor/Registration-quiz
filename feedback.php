@@ -26,7 +26,7 @@ if (!isset($_SESSION["user"])) {
 
 <body>
     <div class="container">
-        <form onsubmit="emailSend(); reset(); return false;">
+        <form onsubmit="emailSend(); reset(); return false;" method="post">
             <h2>Feedback</h2>
             <h3>I value your thoughts and contributions and would like to hear from you how to quiz was,
                 and i will get back to you as soon as possible.
