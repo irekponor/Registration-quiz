@@ -238,14 +238,12 @@ submitBtn.addEventListener("click", () => {
       fetch("save_score.php", {
         method: "POST",
         body: formData,
-      })
-        .then((response) => response.text())
-        .then(() => {
-          quiz.innerHTML = `
+      });
+      quiz.innerHTML = `
               <div class="quiz-results">
                 <h3>You Answered ${score}/${
-            data.length
-          } Questions Correctly</h3>
+        data.length
+      } Questions Correctly</h3>
                 <h5>Questions You Failed: ${failedQuestions
                   .map(
                     (question, index) => `
@@ -261,7 +259,6 @@ submitBtn.addEventListener("click", () => {
               </div>
               <button onclick="location.reload()">Restart</button>
             `;
-        });
     }
   }
 });
