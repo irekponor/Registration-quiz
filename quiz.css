@@ -81,7 +81,6 @@ button{
   .quiz-results ul {
     list-style: none;
     padding: 0;
-    margin: 0;
   }
   
   .quiz-results li {
@@ -99,7 +98,7 @@ button{
     text-decoration: none;
   }
 
-  
+
   /* Media queries for responsiveness */
   
   @media (max-width: 768px) {
