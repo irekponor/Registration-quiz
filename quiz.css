@@ -96,6 +96,11 @@ button{
   /* Media queries for responsiveness */
   
   @media (max-width: 768px) {
+    .container{
+      width: 500px;
+      border-radius: 20px;
+    }
+
     .quiz-results {
       margin: 20px;
       padding: 10px;
