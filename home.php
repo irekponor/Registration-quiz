@@ -20,10 +20,16 @@ if (!isset($_SESSION["user"])) {
 
 <body>
     <div class="dashboard">
-        <h3>Welcome, Cilian</h3>
-        <p>This is a 20 question quiz that tests your knowledge across multiple fields.</p>
-        <p>Made with love by Emmanuel Irekponor</p>
+        <h3>Hello, Cilian</h3>
+        <p>Welcome to Emmanuel's comprehensive 20-question quiz, designed to challenge your expertise across a
+            wide range of subjects!. This quiz will take you on a journey through various fields,
+            including history, science, literature, music, and more. Get ready to put your knowledge
+            to the test and discover new fascinating facts. Good luck, and have fun!</p>
+
         <a href="quiz.php" class="btn btn-dark">Start</a>
+
+        <p>Made with love by Emmanuel Irekponor</p>
+
     </div>
 </body>
 
