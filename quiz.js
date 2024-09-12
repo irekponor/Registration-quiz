@@ -239,6 +239,8 @@ submitBtn.addEventListener("click", () => {
         method: "POST",
         body: formData,
       })
+        .then((response) => response.text())
+        .then(() => {
           quiz.innerHTML = `
               <div class="quiz-results">
                 <h3>You Answered ${score}/${
