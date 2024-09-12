@@ -239,8 +239,6 @@ submitBtn.addEventListener("click", () => {
         method: "POST",
         body: formData,
       })
-        .then((response) => response.text())
-        .then((message) => {
           quiz.innerHTML = `
               <div class="quiz-results">
                 <h3>You Answered ${score}/${
@@ -260,7 +258,6 @@ submitBtn.addEventListener("click", () => {
                 </h5>
               </div>
               <button onclick="location.reload()">Restart</button>
-               <p>${message}</p>
             `;
         });
     }
