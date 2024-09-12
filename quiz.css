@@ -31,17 +31,32 @@ ul{
 ul li{
     font-size: 1.2rem;
     margin: 1rem 0;
+    margin-bottom: 20px;
 }
 
 ul li label{
     cursor: pointer;
 }
 
-p{
-    margin-top: 30px;
+button{
+    background: rgb(230, 230, 2);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 18px;
+    color: #000000;
+    display: block;
+    font-size: 17px;
+    border-radius: 15px;
 }
 
-button{
+.btn-warning{
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#submit{
     background: #000000;
     color: #fff;
     border: none;
