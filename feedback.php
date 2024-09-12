@@ -40,6 +40,8 @@ if (!isset($_SESSION["user"])) {
             <p>Message:</p>
             <textarea name="message" id="message" rows="4" placeholder="" required="required"></textarea>
             <button type="submit" id="sendMessage" class="c-btn pull-right">Submit</button>
+
+            <p><a href="back.php">Home</a></p>
         </form>
     </div>
 

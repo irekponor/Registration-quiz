@@ -52,3 +52,12 @@ button{
     border-radius: 15px;
     margin-top: 10px;
   }
+
+
+    /* Media queries for responsiveness for feedback page  */
+  
+    @media (max-width: 768px) {
+        form{
+            width: 300px;
+        }
+    }
