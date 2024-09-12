@@ -232,9 +232,9 @@ submitBtn.addEventListener("click", () => {
       loadQuiz();
     } else {
       const formData = new FormData();
+      formData.append("email", "<?php echo $_SESSION['email']; ?>");
       formData.append("score", score);
       formData.append("failed_questions", JSON.stringify(failedQuestions));
-      formData.append("email", "<?php echo $_SESSION['email']; ?>");
       fetch("save_score.php", {
         method: "POST",
         body: formData,
