@@ -260,6 +260,7 @@ submitBtn.addEventListener("click", () => {
                 </h5>
               </div>
               <button onclick="location.reload()">Restart</button>
+               <p>${message}</p>
             `;
         });
     }
