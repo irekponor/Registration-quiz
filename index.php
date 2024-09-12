@@ -81,6 +81,7 @@
             <i class="fa-solid fa-user"></i>
 
             <h3>Create Account</h3>
+
             <input type="text" name="fullname" placeholder="Full Name">
 
             <input type="text" name="email" placeholder="Email">

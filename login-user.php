@@ -1,10 +1,3 @@
-<?php
-session_start();
-if (isset($_SESSION["user"])) {
-    header("location: home.php");
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +7,7 @@ if (isset($_SESSION["user"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="index.css" type="text/css">
     <script src="https://kit.fontawesome.com/de8e2530fe.js" crossorigin="anonymous"></script>
 </head>
 
@@ -29,7 +22,7 @@ if (isset($_SESSION["user"])) {
 
             require_once "database.php";
 
-            $query = "SELECT * FROM users WHERE email = :email";
+            $query = "SELECT * FROM accounts WHERE email = :email";
             $stmt = $pdo->prepare($query);
             $stmt->bindParam(":email", $email);
             $stmt->execute();
@@ -52,6 +45,8 @@ if (isset($_SESSION["user"])) {
         ?>
 
         <form action="login-user.php" method="post">
+
+            <h3>Sign In</h3>
 
             <i class="fa-solid fa-user"></i>
 
