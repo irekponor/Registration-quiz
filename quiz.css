@@ -93,6 +93,13 @@ button{
   }
   
   
+  .btn{
+    margin: 20px;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  
   /* Media queries for responsiveness */
   
   @media (max-width: 768px) {
