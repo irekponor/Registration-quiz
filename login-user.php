@@ -46,9 +46,9 @@
 
         <form action="login-user.php" method="post">
 
-            <h3>Sign In</h3>
-
             <i class="fa-solid fa-user"></i>
+
+            <h3>Sign In</h3>
 
             <input type="text" name="email" placeholder="Email">
 
