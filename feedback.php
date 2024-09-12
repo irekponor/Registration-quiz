@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
     <link rel="stylesheet" href="feedback.css" type="text/css">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="Images/logo.jpg">
+    <link rel="apple-touch-icon" href="Images/logo.jpg">
+    <link rel="apple-touch-icon" sizes="72x72" href="Images/logo.jpg">
+    <link rel="apple-touch-icon" sizes="114x114" href="Images/logo.jpg">
+    <link rel="apple-touch-icon" sizes="144x144" href="Images/logo.jpg">
+
 </head>
 
 <body>
