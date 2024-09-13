@@ -211,6 +211,7 @@ function getSelect() {
 
   return answer;
 }
+const userEmail = "<?php echo htmlspecialchars($userEmail); ?>";
 
 submitBtn.addEventListener("click", () => {
   const answer = getSelect();
@@ -231,7 +232,6 @@ submitBtn.addEventListener("click", () => {
     if (currentQuiz < data.length) {
       loadQuiz();
     } else {
-      const userEmail = "<?php echo htmlspecialchars($userEmail); ?>";
       const formData = new FormData();
       formData.append("email", userEmail);
       formData.append("score", score);
