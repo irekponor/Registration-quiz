@@ -25,3 +25,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // error should be handled silently that's if there will be error sha
     }
 }
+?>
+
+
+
+
+<input type="text" name="email" placeholder="Email">
+
+<input type="number" name="score" placeholder="Score">
+
+
+<input type="number" name="failed_questions" placeholder=Failed-questions">
+
+
+<input type="submit" class="btn btn-primary" value="Sign Up" name="submit">
