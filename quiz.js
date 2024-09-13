@@ -262,7 +262,7 @@ submitBtn.addEventListener("click", () => {
                <button onclick="location.href='feedback.php'">Give Feedback</button>
                  </div>
                <div class="btn">
-              <button onclick="location.reload()">Restart</button>
+              <button onclick="location.href='quiz.php'">Restart</button>
               </div>
             `;
     }
