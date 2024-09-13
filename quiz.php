@@ -3,12 +3,7 @@ session_start();
 if (!isset($_SESSION["user"])) {
     header("location: login-user.php");
 }
-if (!isset($_SESSION['email'])) {
-    header('Location: login-user.php');
-    exit();
-}
 
-$userEmail = $_SESSION['email'];
 ?>
 
 <!DOCTYPE html>
@@ -36,10 +31,7 @@ $userEmail = $_SESSION['email'];
 
     <div class="container" id="quiz">
 
-        <div id="user-email">
-            <p>Signed in as: <span id="email-display"><?php echo htmlspecialchars($userEmail); ?></span></p>
-        </div>
-
+        <p id="user-email-display"></p>
         <div id="quiz-header">
             <h2 id="question">MCQS text</h2>
             <ul>
