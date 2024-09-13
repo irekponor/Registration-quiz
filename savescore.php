@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (isset($email) && isset($score)) {
         try {
-            $query = "INSERT INTO quiz_scores (email, score) VALUES (:email, :score";
+            $query = "INSERT INTO quiz_scores (email, score) VALUES (:email, :score)";
             $stmt = $pdo->prepare($query);
             $stmt->bindParam(":email", $email);
             $stmt->bindParam(":score", $score);
