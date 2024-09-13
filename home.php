@@ -31,6 +31,7 @@ if (!isset($_SESSION["user"])) {
 
 <body>
     <div class="dashboard">
+        <h3>Hello <i class="fa-solid fa-hand fa-rotate-by" style="color: #000000; --fa-rotate-angle: 50deg;"></i> </h3>
         <p>Welcome to Emmanuel's comprehensive 20-question quiz, designed to challenge your expertise across a
             wide range of subjects!. This quiz will take you on a journey through various fields,
             including history, science, literature, music, and more. Get ready to put your knowledge
