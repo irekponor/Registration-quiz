@@ -231,7 +231,8 @@ submitBtn.addEventListener("click", () => {
     if (currentQuiz < data.length) {
       loadQuiz();
     } else {
-      const userEmail = "($userEmail)?>";
+      const userEmail =
+        "<span id='email-display'><?php echo htmlspecialchars($userEmail); ?></span></p>";
       const formData = new FormData();
       formData.append("email", userEmail);
       formData.append("score", score);
@@ -261,7 +262,7 @@ submitBtn.addEventListener("click", () => {
                <button onclick="location.href='feedback.php'">Give Feedback</button>
                  </div>
                <div class="btn">
-              <button>Restart</button>
+              <button >Restart</button>
               </div>
             `;
     }
