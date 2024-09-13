@@ -8,9 +8,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $score = $_POST["score"];
     $failed_questions = $_POST["failed_questions"];
 
-
     try {
-        $query = "INSERT INTO quiz_scores (email, score, failed_questions) VALUES (:email, :score, :failed_questions;";
+        $query = "INSERT INTO quiz_scores (email, score, failed_questions) VALUES (:email, :score, :failed_questions)";
         $stmt = $pdo->prepare($query);
         $stmt->bindParam(":email", $email);
         $stmt->bindParam(":score", $score);
@@ -19,10 +18,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         session_unset();
         session_destroy();
+    } catch (PDOException $e) {
+
+        error_log("Database error: " . $e->getMessage());
+    } finally {
         $pdo = null;
         $stmt = null;
-        die();
-    } catch (PDOException $e) {
-        // error should be handled silently that's if there will be error sha
     }
 }
