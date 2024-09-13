@@ -181,6 +181,7 @@ const submitBtn = document.getElementById("submit");
 let currentQuiz = 0;
 let score = 0;
 let failedQuestions = [];
+const userEmail = "<?php echo htmlspecialchars($userEmail); ?>";
 
 loadQuiz();
 
@@ -231,13 +232,14 @@ submitBtn.addEventListener("click", () => {
     if (currentQuiz < data.length) {
       loadQuiz();
     } else {
-      const userEmail = "($userEmail)?>";
-      const formData = new FormData();
-      formData.append("email", userEmail);
-      formData.append("score", score);
-      fetch("savescore.php", {
-        method: "POST",
-        body: formData,
+      document.getElementById("submit").addEventListener("click", () => {
+        const formData = new FormData();
+        formData.append("email", userEmail);
+        formData.append("score", score);
+        fetch("savescore.php", {
+          method: "POST",
+          body: formData,
+        });
       });
       quiz.innerHTML = `  
               <div class="quiz-results">
