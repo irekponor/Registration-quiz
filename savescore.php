@@ -4,14 +4,14 @@ session_start();
 require_once "database.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $userEmail = $_POST["email"];
+    $email = $_POST["email"];
     $score = $_POST["score"];
 
     if (isset($email) && isset($score)) {
         try {
             $query = "INSERT INTO quiz_scores (email, score) VALUES (:email, :score)";
             $stmt = $pdo->prepare($query);
-            $stmt->bindParam(":email", $userEmail);
+            $stmt->bindParam(":email", $email);
             $stmt->bindParam(":score", $score);
             $stmt->execute();
 
