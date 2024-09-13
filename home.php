@@ -31,7 +31,6 @@ if (!isset($_SESSION["user"])) {
 
 <body>
     <div class="dashboard">
-        <h3>Hello, Cilian</h3>
         <p>Welcome to Emmanuel's comprehensive 20-question quiz, designed to challenge your expertise across a
             wide range of subjects!. This quiz will take you on a journey through various fields,
             including history, science, literature, music, and more. Get ready to put your knowledge
