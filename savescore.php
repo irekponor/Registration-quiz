@@ -14,11 +14,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->bindParam(":email", $email);
             $stmt->bindParam(":score", $score);
             $stmt->execute();
-
-
-            session_unset();
-            session_destroy();
-
             header('Location: quiz.php');
         } catch (PDOException $e) {
             // error should be handled silently that's if there will be error sha
