@@ -49,6 +49,7 @@ if (isset($_SESSION["user"])) {
                 if (password_verify($pwd, $user["pwd"])) {
                     session_start();
                     $_SESSION["user"] = "yes";
+                    $_SESSION['email'] = $user['email'];
                     header("location: home.php");
                     exit();
                 } else {
