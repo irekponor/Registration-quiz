@@ -231,6 +231,15 @@ submitBtn.addEventListener("click", () => {
     if (currentQuiz < data.length) {
       loadQuiz();
     } else {
+      const userEmail = "<?php echo $_SESSION['email']; ?>";
+      const formData = new FormData();
+      formData.append("email", userEmail);
+      formData.append("score", score);
+      formData.append("failed_questions", JSON.stringify(failedQuestions));
+      fetch("save_score.php", {
+        method: "POST",
+        body: formData,
+      });
       quiz.innerHTML = `  
               <div class="quiz-results">
                 <h3>You Answered ${score}/${
