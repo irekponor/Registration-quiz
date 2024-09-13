@@ -231,6 +231,7 @@ submitBtn.addEventListener("click", () => {
     if (currentQuiz < data.length) {
       loadQuiz();
     } else {
+      const userEmail = "<?php echo htmlspecialchars($_SESSION['email']); ?>";
       const formData = new FormData();
       formData.append("email", userEmail);
       formData.append("score", score);
