@@ -133,11 +133,11 @@ const data = [
     correct: "d",
   },
   {
-    question: "17. Which musician is known for his her song 'Soldier'?",
-    a: "Fave",
-    b: "Simi",
-    c: "Qing Madi",
-    d: "Tems",
+    question: "17. Doctor of philsophy is?",
+    a: "ph.D",
+    b: "Ph.D",
+    c: "PHD",
+    d: "ph.d",
     correct: "b",
   },
   {
