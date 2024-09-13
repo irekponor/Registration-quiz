@@ -27,15 +27,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
+<form action="savescore.php" method="post">
 
 
+    <input type="text" name="email" placeholder="Email">
 
-<input type="text" name="email" placeholder="Email">
-
-<input type="number" name="score" placeholder="Score">
-
-
-<input type="number" name="failed_questions" placeholder=Failed-questions">
+    <input type="number" name="score" placeholder="Score">
 
 
-<input type="submit" class="btn btn-primary" value="Sign Up" name="submit">
+    <input type="number" name="failed_questions" placeholder=Failedquestions>
+
+
+    <input type="submit" class="btn btn-primary" value="Sign Up" name="submit">
+
+</form>
