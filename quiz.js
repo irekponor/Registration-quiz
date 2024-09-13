@@ -133,8 +133,8 @@ const data = [
     correct: "d",
   },
   {
-    question: "17. Doctor of philsophy is?",
-    a: "ph.D",
+    question: "17. Doctor of philsophy is written as?",
+    a: "p.hD",
     b: "Ph.D",
     c: "PHD",
     d: "ph.d",
@@ -231,8 +231,7 @@ submitBtn.addEventListener("click", () => {
     if (currentQuiz < data.length) {
       loadQuiz();
     } else {
-      const userEmail =
-        "<span id='email-display'><?php echo htmlspecialchars($userEmail); ?></span></p>";
+      const userEmail = "<?php echo htmlspecialchars($userEmail); ?>";
       const formData = new FormData();
       formData.append("email", userEmail);
       formData.append("score", score);
@@ -262,7 +261,7 @@ submitBtn.addEventListener("click", () => {
                <button onclick="location.href='feedback.php'">Give Feedback</button>
                  </div>
                <div class="btn">
-              <button >Restart</button>
+              <button onclick="location.href='quiz.php'">Restart</button>
               </div>
             `;
     }
