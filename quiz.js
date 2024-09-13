@@ -211,7 +211,9 @@ function getSelect() {
 
   return answer;
 }
+
 const userEmail = "<?php echo htmlspecialchars($userEmail); ?>";
+const failedQuestionsCount = failedQuestions.length;
 
 submitBtn.addEventListener("click", () => {
   const answer = getSelect();
@@ -235,7 +237,7 @@ submitBtn.addEventListener("click", () => {
       const formData = new FormData();
       formData.append("email", userEmail);
       formData.append("score", score);
-      formData.append("failed_questions", JSON.stringify(failedQuestions));
+      formData.append("failed_questions_count", failedQuestionsCount);
       fetch("savescore.php", {
         method: "POST",
         body: formData,
