@@ -36,6 +36,7 @@ $userEmail = $_SESSION['email'];
     <div class="container" id="quiz">
 
         <p>Signed in as: <span id="email-display"><?php echo htmlspecialchars($userEmail); ?></span></p>
+
         <p id="user-email-display"></p>
         <div id="quiz-header">
             <h2 id="question">MCQS text</h2>
