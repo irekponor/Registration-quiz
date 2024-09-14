@@ -44,4 +44,10 @@ p{
     .btn-dark{
         margin: 2px 5px 5px 10.1rem;
     }
+    p{
+        margin: 0 28px;
+    }
+    .btn-dark{
+        margin-top: 20px;
+    }
 }
