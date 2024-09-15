@@ -38,6 +38,19 @@ ul li label{
     cursor: pointer;
 }
 
+#submit{
+  background: rgb(230, 230, 2);
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 18px;
+  width: 20%;
+  color: #000000;
+  display: block;
+  font-size: 17px;
+  border-radius: 15px;
+}
+
 button{
   background: #000000;
   color: #fff;
@@ -48,24 +61,6 @@ button{
   padding: 1rem;
   font-size: 18px;
   border-radius: 20px 20px 0 0;
-}
-
-.btn-warning{
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-#submit{
-  background: rgb(230, 230, 2);
-  outline: none;
-  cursor: pointer;
-  border: none;
-  padding: 18px;
-  color: #000000;
-  display: block;
-  font-size: 17px;
-  border-radius: 15px;
 }
 
 .quiz-results{
