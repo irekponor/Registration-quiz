@@ -62,7 +62,7 @@ $userEmail = $_SESSION['email'];
             </ul>
             <div class="move">
                 <button
-                    id="goBack">Back <i class="fa-solid fa-arrow-right-to-bracket fa-rotate-by" style="color: #000000; --fa-rotate-angle: 180deg;"></i>
+                    id="goBack"><i class="fa-solid fa-arrow-right-to-bracket fa-rotate-by" style="color: #000000; --fa-rotate-angle: 180deg;"></i> Back
                 </button>
                 <button
                     id="submit">Next <i class="fa-solid fa-arrow-right-to-bracket"></i>

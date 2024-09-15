@@ -148,7 +148,11 @@ span{
     }
 
     #submit{
-      width: 50%;
+      width: 40%;
+    }
+    
+    #goBack{
+      width: 40%;
     }
   }
   
