@@ -60,15 +60,19 @@ $userEmail = $_SESSION['email'];
                     <label for="d" id="optionD">Option D</label>
                 </li>
             </ul>
-
-            <button
-                id="submit">Next <i class="fa-solid fa-arrow-right-to-bracket"></i>
-            </button>
+            <div class="move">
+                <button
+                    id="goBack">Back <i class="fa-solid fa-arrow-right-to-bracket fa-rotate-by" style="color: #000000; --fa-rotate-angle: 180deg;"></i>
+                </button>
+                <button
+                    id="submit">Next <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                </button>
+            </div>
 
         </div>
 
         <button>
-            <a href="logout.php"><span>Log-Out</span></a>
+            <a href="logout.php" class="btn btn-warning"><span>Log-Out</span></a>
         </button>
 
     </div>

@@ -38,6 +38,11 @@ ul li label{
     cursor: pointer;
 }
 
+.move{
+  justify-content: space-between;
+  display: flex;
+}
+
 #submit{
   background: rgb(230, 230, 2);
   outline: none;
