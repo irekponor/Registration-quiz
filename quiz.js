@@ -178,6 +178,14 @@ const optionD = document.getElementById("optionD");
 
 const submitBtn = document.getElementById("submit");
 
+const goBackBtn = document.createElement("button");
+goBackBtn.onclick = () => {
+  if (currentQuiz > 0) {
+    currentQuiz--;
+    loadQuiz();
+  }
+};
+
 let currentQuiz = 0;
 let score = 0;
 let failedQuestions = [];
