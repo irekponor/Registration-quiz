@@ -59,10 +59,12 @@ button{
   cursor: pointer;
   padding: 1rem;
   font-size: 18px;
+  text-decoration: none;
   border-radius: 20px 20px 0 0;
 }
 
 span{
+  text-decoration: none;
   color: #fff;
   text-align: center;
 }
