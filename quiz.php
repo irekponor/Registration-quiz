@@ -59,8 +59,7 @@ $userEmail = $_SESSION['email'];
                 </li>
             </ul>
 
-            <button
-                id="submit">Next <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            <button>Next <i class="fa-solid fa-arrow-right-to-bracket"></i>
             </button>
 
         </div>
