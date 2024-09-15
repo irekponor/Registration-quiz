@@ -66,7 +66,7 @@ $userEmail = $_SESSION['email'];
         </div>
 
         <button>
-            <a href="logout.php" class="btn btn-warning">Log-Out</a>
+            <a href="logout.php" class="btn btn-warning"><span>Log-Out</span></a>
         </button>
 
     </div>

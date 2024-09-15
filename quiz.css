@@ -63,6 +63,11 @@ button{
   border-radius: 20px 20px 0 0;
 }
 
+span{
+  color: #fff;
+  text-align: center;
+}
+
 .quiz-results{
     margin: 0 20px 0 20px;
 }
