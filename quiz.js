@@ -111,7 +111,7 @@ const data = [
     question: "14. Which Nigerian musician is known for his hit song 'Fall'?",
     a: "Davido",
     b: "Wizkid",
-    c: "Tiwa Savage",
+    c: "Rema",
     d: "Burna Boy",
     correct: "a",
   },
