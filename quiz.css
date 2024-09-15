@@ -39,23 +39,6 @@ ul li label{
 }
 
 button{
-  background: rgb(230, 230, 2);
-  outline: none;
-  cursor: pointer;
-  border: none;
-  padding: 18px;
-  color: #000000;
-  display: block;
-  font-size: 17px;
-}
-
-.btn-warning{
-    color: #000000;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-#submit{
   background: #000000;
   color: #fff;
   border: none;
@@ -65,6 +48,24 @@ button{
   padding: 1rem;
   font-size: 18px;
   border-radius: 20px 20px 0 0;
+}
+
+.btn-warning{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#submit{
+  background: rgb(230, 230, 2);
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 18px;
+  color: #000000;
+  display: block;
+  font-size: 17px;
+  border-radius: 15px;
 }
 
 .quiz-results{
