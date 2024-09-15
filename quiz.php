@@ -59,13 +59,15 @@ $userEmail = $_SESSION['email'];
                 </li>
             </ul>
 
-            <button>
-                <a href="logout.php" class="btn btn-warning">Log-Out</a>
+            <button
+                id="submit">Next <i class="fa-solid fa-arrow-right-to-bracket"></i>
             </button>
 
         </div>
 
-        <button id="submit">Next <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+        <button>
+            <a href="logout.php" class="btn btn-warning">Log-Out</a>
+        </button>
 
     </div>
 
