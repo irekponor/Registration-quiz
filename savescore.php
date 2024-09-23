@@ -3,6 +3,8 @@ session_start();
 
 require_once "database.php";
 
+$userEmail = $_SESSION['user_email'] ?? '';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $score = $_POST["score"];
