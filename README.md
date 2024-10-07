@@ -1,4 +1,8 @@
-I changed the UI of the quiz app, and added some more code to js.
-Also added a feedback page where you can tell me how your experience page,
-Added a correction page at the end of the quiz and connected it to a DB.
+## Copyright Notice
+
+© 2024 Emmanuel Oseghale Irekponor. All rights reserved.
+
+This code is licensed under the MIT License. You are free to use, modify, and distribute this code in your projects. However, if you use this code in your application or project, please provide proper credit to the original author.
+
+*"This project is based on the work of Emmanuel Oseghale Irekponor."*
 
