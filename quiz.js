@@ -159,7 +159,7 @@ const data = [
     correct: "c",
   },
   {
-    question: "20. What is Emmanuel Irekponor's yoruba name. lol?",
+    question: "20. What is Emmanuel Irekponor's yoruba name?",
     a: "Oluwafisayomi",
     b: "Ayomide",
     c: "Olajide",
