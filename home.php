@@ -38,7 +38,7 @@ if (!isset($_SESSION["user"])) {
             to the test and discover new fascinating facts. Good luck, and have fun!.</p>
         <a href="quiz.php" class="btn btn-dark">Start</a>
 
-        <p>Made with love <i class="fa-solid fa-heart"></i> by Emmanuel Irekponor</p>
+        <p>Made with <i class="fa-solid fa-heart"></i> by Emmanuel Irekponor</p>
 
     </div>
 </body>

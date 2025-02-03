@@ -2,10 +2,10 @@ const data = [
   {
     question: "1. Who is the current ballon d'or winner?",
     a: "Erling Haaland",
-    b: "Virgil Van dijk",
+    b: "Rodrigo",
     c: "Lionel messi",
     d: "Vinicius jr",
-    correct: "c",
+    correct: "b",
   },
   {
     question: "2. Which Nigerian artist won the Grammy Award in 2021?",
