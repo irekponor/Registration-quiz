@@ -83,7 +83,7 @@ const data = [
   },
   {
     question:
-      "11. Which university is nicknamed 'the university of first choice'?",
+      "11. Which university is known as 'the university of first choice' in Nigeria?",
     a: "UNILAG",
     b: "LASU",
     c: "OAU",
