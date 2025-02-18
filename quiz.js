@@ -177,7 +177,6 @@ const optionC = document.getElementById("optionC");
 const optionD = document.getElementById("optionD");
 
 const submitBtn = document.getElementById("submit");
-
 const goBackBtn = document.getElementById("goBack");
 goBackBtn.addEventListener("click", () => {
   if (currentQuiz > 0) {
@@ -210,16 +209,15 @@ function deselectAnswers() {
 
 function getSelect() {
   let answer;
-
   answerEls.forEach((answerEl) => {
     if (answerEl.checked) {
       answer = answerEl.id;
     }
   });
-
   return answer;
 }
 
+// Inline PHP handling for userEmail if this is a .php file
 const userEmail = "<?php echo htmlspecialchars($userEmail); ?>";
 
 submitBtn.addEventListener("click", () => {
@@ -244,35 +242,43 @@ submitBtn.addEventListener("click", () => {
       const formData = new FormData();
       formData.append("email", userEmail);
       formData.append("score", score);
+
+      // Error handling for fetch request
       fetch("savescore.php", {
         method: "POST",
         body: formData,
-      });
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Failed to save score");
+          }
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+
       quiz.innerHTML = `  
-              <div class="quiz-results">
-                <h3>You Answered ${score}/${
-        data.length
-      } Questions Correctly</h3>
-                <h5>Questions You Failed: ${failedQuestions
-                  .map(
-                    (question, index) => `
-                  <li>
-                    Question ${index + 1}: ${question.question} <br>
-                    Your Answer: ${question.userAnswer} <br>
-                    Correct Answer: ${question.correctAnswer}
-                  </li>
-                `
-                  )
-                  .join("")}
-                </h5>
-              </div>
-              <div class="btn">
-               <button onclick="location.href='feedback.php'"><span>Give Feedback</span></button>
-                 </div>
-               <div class="btn">
-              <button onclick="location.reload()"><span>Restart</span></button>
-              </div>
-            `;
+        <div class="quiz-results">
+          <h3>You Answered ${score}/${data.length} Questions Correctly</h3>
+          <h5>Questions You Failed: ${failedQuestions
+            .map(
+              (question, index) => `
+                <li>
+                  Question ${index + 1}: ${question.question} <br>
+                  Your Answer: ${question.userAnswer} <br>
+                  Correct Answer: ${question.correctAnswer}
+                </li>`
+            )
+            .join("")}
+          </h5>
+        </div>
+        <div class="btn">
+          <button onclick="location.href='feedback.php'"><span>Give Feedback</span></button>
+        </div>
+        <div class="btn">
+          <button onclick="location.reload()"><span>Restart</span></button>
+        </div>
+      `;
     }
   }
 });
